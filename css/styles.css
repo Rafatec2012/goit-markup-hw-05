@@ -83,7 +83,9 @@ background: rgba(47, 48, 58, 0.4);
   border-radius: 4px;
   border-style: none;
   margin: 60px;
+  
 }
+
 
 .intro-bot :focus {
   background: #2196f3;
@@ -91,6 +93,8 @@ background: rgba(47, 48, 58, 0.4);
 
 .intro-bot:hover {
   background-color: #4686bb;
+  
+
 }
 
 .conocenos {
@@ -643,4 +647,60 @@ margin-top: 30px;
   padding-bottom: 60px;
   gap: 60px;
   margin-top: 40px;
+}
+.modal{
+  width: 400px;
+height: 400px;
+position: fixed;
+background: #FFFFFF;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 4px;
+
+}
+.x{
+  
+border-radius: 50%;
+margin-left: 300px;
+display: flex;
+border: 1px solid rgba(0, 0, 0, 0.1);
+background: #FFFFFF;
+justify-content: center;
+width: 30px;
+height: 30px;
+left: 1026px;
+top: 229px
+
+}
+.overlay{
+  overflow: hidden;
+  
+
+}
+.estilimages{
+  overflow: hidden;
+  position: relative;
+ 
+}
+.box{
+ 
+  
+  
+}
+.tecnoduck{
+  position: absolute;
+width: 322px;
+font-weight: 400;
+font-size: 18px;
+line-height: 1.5;
+letter-spacing: 0.03em;
+color: #FFFFFF;
+justify-content: center;
+transition: transfom 1s ease;
+background: rgba(33, 150, 243, 0.9);
+width: 380px;
+height: 394px;
+}
+.overlay:hover .tecnoduck{
+  transform: translateY(-294px);
+
 }

@@ -58,9 +58,19 @@
         <div class="firme">
           <div class="container">
             <h1 class="intro-title">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
-            <button type="button" class="intro-bot">
+
+            <button
+              onclick="window.modal.showModal();"
+              type="button"
+              class="intro-bot"
+            >
               solicite nuestro servicio
             </button>
+            <dialog id="modal" class="modal">
+              <button class="x" onclick="window.modal.close();">X</button>
+              <form action="/enviar-respuesta"></form>
+              <input type="text" yeiner />
+            </dialog>
           </div>
         </div>
       </section>

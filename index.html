@@ -20,7 +20,7 @@
   <body>
     <header>
       <div class="container container-header">
-        <a href="./index.html" class="icon-blue web">WebStudio</a>
+        <a href="./index.html" class="icon-blue">WebStudio</a>
         <nav>
           <ul class="nav-menu">
             <li class="nav-item">
@@ -35,16 +35,16 @@
 
         <ul class="nav-contactos">
           <li class="email-item">
-            <a href="mailto:info@devstudio.com" class="mail-tel-header mai"
-              ><svg class="mai" width="16" height="12">
+            <a href="mailto:info@devstudio.com" class="mail-tel-header"
+              ><svg width="16" height="12">
                 <use href="./images/icons.svg#icon-sobre"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
           <li>
-            <a href="tel:+573126626952" class="mail-tel-header mai"
-              ><svg class="mai" width="10" height="16">
+            <a href="tel:+573126626952" class="mail-tel-header"
+              ><svg width="10" height="16">
                 <use href="./images/icons.svg#icon-Vector"></use>
               </svg>
               +573126626952</a
@@ -55,23 +55,21 @@
     </header>
     <main>
       <section class="containertit section">
-        <div class="firme">
+        <div class="transparent-efec">
           <div class="container">
             <h1 class="intro-title">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
 
-            <button
-              onclick="window.modal.showModal();"
-              type="button"
-              class="intro-bot"
-            >
+            <button type="button" data-modal-open class="intro-bot">
               solicite nuestro servicio
             </button>
-            <dialog id="modal" class="modal">
-              <button class="x" onclick="window.modal.close();">X</button>
-              <form action="/enviar-respuesta"></form>
-              <input type="text" yeiner />
-            </dialog>
+
+            <div data-modal class="is-hidden">
+              <div class="modal">
+                <button data-modal-close class="modal-close">X</button>
+              </div>
+            </div>
           </div>
+          <script src="./js/modal.js"></script>
         </div>
       </section>
       <section class="section">

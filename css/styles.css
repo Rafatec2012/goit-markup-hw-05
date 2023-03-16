@@ -11,32 +11,71 @@ body {
   font-size: 20px;
   background-color: #ffffff;
 }
-
 header {
   border-bottom: 2px solid #ececec;
   height: 80px;
   display: flex;
   align-items: center;
-
 }
-
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  
- 
 }
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.container-header {
+  display: flex;
+  align-items: center;
 }
 
 .nav-item:not(:last-child),
 .email-item:not(:last-child) {
   margin-right: 50px;
+}
+
+
+.icon-blue {
+  color: #2196f3;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  font-style: normal;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+}
+.nav-menu {
+  display: flex;
+}
+.link{
+  color: #2196f3;
+}
+
+.header-id {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #000000;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin: 30px;
+}
+.nav-contactos {
+  display: flex;
+  margin-left: auto;
+}
+.mail-tel-header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: #757575;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.mail-tel-header:hover {
+  color: #2196f3;
 }
 
 .containertit {
@@ -49,10 +88,16 @@ header {
   text-align: center;
   justify-content: center;
   gap: 50px;
- margin-top: -8px;
+
 }
-.firme{
-  padding: 160px;
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+
+.transparent-efec{
+  padding: 158px;
 background: rgba(47, 48, 58, 0.4);
 
 }
@@ -95,6 +140,9 @@ background: rgba(47, 48, 58, 0.4);
   background-color: #4686bb;
   
 
+}
+.is-hidden{
+  display: none;
 }
 
 .conocenos {
@@ -145,21 +193,6 @@ ul {
 
 .mail-tel-footer:hover {
   color: #2196f3;
-}
-
-.mail-tel-header {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
-  color: #757575;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-.mai:hover {
-  color: #2196f3;
-  
 }
 
 
@@ -220,16 +253,7 @@ p {
   margin-top: 60px;
 }
 
-.header-id {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: #000000;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  margin: 30px;
-}
+
 
 .header-id:not(:last-child),
 .nav-contactos:not(:last-child) {
@@ -292,15 +316,7 @@ a {color: currentColor;
 .nav-web:focus {
   background-color: #2196f3;
 }
-.icon-blue {
-  color: #2196f3;
-  font-family: 'Raleway';
-  font-weight: 700;
-  font-size: 26px;
-  font-style: normal;
-  line-height: 1.1;
-  letter-spacing: 0.03em;
-}
+
 
 .icon-blue-footer {
   color: #2196f3;
@@ -337,9 +353,7 @@ a {color: currentColor;
   letter-spacing: 0.03em;
   text-align: center;
 }
-.link {
-  color: #2196f3;
-}
+
 .flex-container {
   display: flex;
   gap: 30px;
@@ -432,17 +446,7 @@ height: 72px;
   margin-top: -10px;
 }
 
-.nav-menu {
-  display: flex;
-}
-.nav-contactos {
-  display: flex;
-  margin-left: auto;
-}
-.container-header {
-  display: flex;
-  align-items: center;
-}
+
 
 ul,
 h1,
@@ -649,31 +653,29 @@ margin-top: 30px;
   margin-top: 40px;
 }
 .modal{
-  width: 400px;
-height: 400px;
 position: fixed;
 background: #FFFFFF;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 4px;
-
+width: 500px;
+height: 411px;
+left: 536px;
+top: 221px;
 }
-.x{
-  
-border-radius: 50%;
-margin-left: 300px;
-display: flex;
-border: 1px solid rgba(0, 0, 0, 0.1);
-background: #FFFFFF;
-justify-content: center;
+.modal-close{
+  margin-left: 450px;
+  margin-top: 20px;
+  border-radius: 50%;
 width: 30px;
 height: 30px;
 left: 1026px;
-top: 229px
-
+top: 229px;
+background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .overlay{
   overflow: hidden;
-  
+ 
 
 }
 .estilimages{
@@ -681,26 +683,36 @@ top: 229px
   position: relative;
  
 }
-.box{
- 
-  
-  
-}
+
 .tecnoduck{
   position: absolute;
-width: 322px;
-font-weight: 400;
 font-size: 18px;
 line-height: 1.5;
 letter-spacing: 0.03em;
 color: #FFFFFF;
 justify-content: center;
-transition: transfom 1s ease;
+transition: transform 250ms ease;
 background: rgba(33, 150, 243, 0.9);
+padding: 30px;
 width: 380px;
-height: 394px;
+height: 294px;
+margin-top: 0%;
+
 }
 .overlay:hover .tecnoduck{
-  transform: translateY(-294px);
+  transform: translatey(-294px);
 
+}
+
+
+.link::after{
+  position: absolute;
+  display: block;
+ width: 60px;
+ height: 5px;
+ background-color: #2196f3;
+ border-radius: 7px;
+ margin-left: 30px;
+ margin-top: 26px;
+content: '';
 }
